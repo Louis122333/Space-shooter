@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Shooter</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="images/alien.png" />
+</head>
+<script src="app.js" defer></script>
+
+<body>
+    <h1 class="menu-title">Defense of the Millenium Falcon</h1>
+    <div id="board">
+        <div class="enemies"></div>
+        <div class="explosion"></div>
+        <div id="jet"></div>
+    </div>
+        <div id="points">0</div>
+ 
+    
+    
+    <audio id="laserblast" controls style="display:none">
+        <source src="/audio/laserblast.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+    <audio id="missileblast" controls style="display:none">
+        <source src="/audio/firemissile.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+    <audio id="explode" controls style="display:none">
+        <source src="/audio/explode.wav" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+    <audio id="gameover" controls style="display:none">
+        <source src="/audio/gameover.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+    <button class='menuButton' onclick="pauseGame()">Pause</button>
+    <button class='menuButton' onclick="restartGame()">Restart</button>
+    <button class="menuButton" onclick="location.href='menu.html'" type="button">
+        Back to menu</button>
+</body>
+
+</html>

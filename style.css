@@ -1,0 +1,115 @@
+
+body {
+    width: 100%;
+    overflow: hidden;
+    background: url("images/space-background.png");
+    background-size: cover;
+  }
+
+#board {
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    margin: 40px auto;
+    border: 2px solid rgb(241, 237, 12);
+    background: url("/images/space.png");
+}
+
+#jet {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url("/images/rocket.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 50%;
+    bottom: 0px;
+
+}
+.enemies {
+    position: absolute;
+    top: 0px;
+    width: 70px;
+    height: 70px;
+    background: url("/images/alien.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 4s ease;
+}
+
+#explosion {
+    position: absolute;
+    top: 0px;
+    width: 100px;
+    height: 100px;
+    background: url("/images/explosion.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.missiles {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background: url("/images/missile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lasers {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    transform: rotate(90);
+    background: url("/images/laser.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#points {
+    position: absolute;
+    top: 0px;
+    margin: 40px;
+    opacity: 0.7;
+    font-size: 10em;
+    color: rgb(241, 237, 12);
+}
+
+button.unmute {
+    height: 40px;
+    width: 100px;
+    margin-left: 5rem;
+}
+
+#info {
+    color: rgb(241, 237, 12);
+    text-align: center;
+    font-size: 40px;
+}
+
+.menu-title {
+    color: rgb(241, 237, 12);
+    text-align: center;
+    font-size: 5rem;
+}
+
+.menuButton {
+    height: 100px;
+    width: 300px;
+    font-size: 40px;
+    background-color: black;
+    color:rgb(241, 237, 12);
+    border: 2px solid rgb(241, 237, 12);
+    margin: 1rem;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
